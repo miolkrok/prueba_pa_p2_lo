@@ -56,7 +56,9 @@ public class PruebaPaP2LoApplication implements CommandLineRunner{
 		prop.setCedula("1718496944");
 		prop.setFechaNacimiento(LocalDateTime.of(1997, 5, 19, 0, 10));
 		this.propietarioService.crear(prop);
-		
+		MatriculaVehiculos matr = new MatriculaVehiculos();
+		matr.setPropietario(prop);
+		matr.setVehiculo(vehi);
 		this.gestMatrServ.matricular("PDO-3562", "1718496944");
 	}
 

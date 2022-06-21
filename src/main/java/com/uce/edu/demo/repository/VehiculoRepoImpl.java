@@ -1,5 +1,7 @@
 package com.uce.edu.demo.repository;
 
+import java.math.BigDecimal;
+
 import org.springframework.stereotype.Repository;
 
 import com.uce.edu.demo.modelo.Vehiculo;
@@ -19,9 +21,9 @@ public class VehiculoRepoImpl implements IVehiculoRepo{
 		System.out.println("se vehiculo buscado el vehiculo: " +placa);
 		Vehiculo vehi = new Vehiculo();
 		vehi.setPlaca(placa);
-		vehi.setPrecio(vehi.getPrecio());
-		vehi.setMarca(vehi.getMarca());
-		vehi.setTipo(vehi.getTipo());
+		vehi.setPrecio(new BigDecimal(20000));
+		vehi.setMarca("FORD");
+		vehi.setTipo("liviano");
 		return vehi;
 	}
 

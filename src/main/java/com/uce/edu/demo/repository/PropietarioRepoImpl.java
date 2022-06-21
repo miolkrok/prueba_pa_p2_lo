@@ -1,5 +1,7 @@
 package com.uce.edu.demo.repository;
 
+import java.time.LocalDateTime;
+
 import org.springframework.stereotype.Repository;
 
 import com.uce.edu.demo.modelo.Propietario;
@@ -18,7 +20,9 @@ public class PropietarioRepoImpl implements IPropietarioRepo{
 		// TODO Auto-generated method stub
 		Propietario pro = new Propietario();
 		pro.setCedula(cedula);
-		
+		pro.setApellido("ORTIZ");
+		pro.setFechaNacimiento(LocalDateTime.now());
+		pro.setNombre("LUIS");
 		return pro;
 	}
 	@Override
