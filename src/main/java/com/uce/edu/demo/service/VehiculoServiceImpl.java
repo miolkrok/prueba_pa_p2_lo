@@ -8,9 +8,8 @@ import com.uce.edu.demo.modelo.Vehiculo;
 import com.uce.edu.demo.repository.IVehiculoRepo;
 
 @Service
-@Qualifier("pesado")
-public class VehiculoPesadoServiceImpl implements IVehiculoService{
-
+public class VehiculoServiceImpl implements IVehiculoService {
+	
 	@Autowired
 	private IVehiculoRepo vehiculoRepo;
 

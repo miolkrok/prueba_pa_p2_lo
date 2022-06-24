@@ -5,14 +5,12 @@ import org.springframework.stereotype.Repository;
 import com.uce.edu.demo.modelo.MatriculaVehiculos;
 
 @Repository
-public class MatriculaVehiculosRepoImpl implements IMatriculaVehiculosRepo{
+public class MatriculaRepoImpl implements IMatriculaRepo{
 
 	@Override
 	public void crear(MatriculaVehiculos matriculaVehiculos) {
 		// TODO Auto-generated method stub
-		System.out.println("vehiculo matriculado: " +matriculaVehiculos);
+		System.out.println("Se crea la matricula: " +matriculaVehiculos);
 	}
-	
-	
 
 }

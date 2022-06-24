@@ -24,11 +24,7 @@ public class PruebaPaP2LoApplication implements CommandLineRunner{
 	private IPropietarioService propietarioService;
 	
 	@Autowired
-	@Qualifier("liviano")
-	private IVehiculoService vehiculoLivSer;
-	@Autowired
-	@Qualifier("pesado")
-	private IVehiculoService vehiculoPesSer;
+	private IVehiculoService vehiculoService;
 	
 	@Autowired
 	private IGestorMatriculacionService gestMatrServ;
@@ -46,10 +42,10 @@ public class PruebaPaP2LoApplication implements CommandLineRunner{
 		vehi.setPlaca("pdo3562");
 		vehi.setPrecio(new BigDecimal(20000));
 		vehi.setTipo("liviano");
-		this.vehiculoLivSer.crear(vehi);
+		this.vehiculoService.crear(vehi);
 		vehi.setMarca("FORD");
 		vehi.setPlaca("PDO-3562");
-		this.vehiculoLivSer.actualizar(vehi);
+		this.vehiculoService.actualizar(vehi);
 		Propietario prop = new Propietario();
 		prop.setNombre("LUIS");
 		prop.setApellido("ORTIZ");

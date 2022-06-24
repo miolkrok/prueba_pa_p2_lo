@@ -18,6 +18,7 @@ public class PropietarioRepoImpl implements IPropietarioRepo{
 	@Override
 	public Propietario buscar(String cedula) {
 		// TODO Auto-generated method stub
+		System.out.println("se vehiculo buscado el vehiculo: " +cedula);
 		Propietario pro = new Propietario();
 		pro.setCedula(cedula);
 		pro.setApellido("ORTIZ");

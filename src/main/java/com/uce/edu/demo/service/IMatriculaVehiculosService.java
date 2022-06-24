@@ -1,9 +1,9 @@
 package com.uce.edu.demo.service;
 
-import com.uce.edu.demo.modelo.MatriculaVehiculos;
+import java.math.BigDecimal;
 
 public interface IMatriculaVehiculosService {
 	
-	public void crear(MatriculaVehiculos matriculaVehiculos);
+	public BigDecimal calcular(BigDecimal precio);
 
 }

@@ -23,7 +23,7 @@ public class VehiculoRepoImpl implements IVehiculoRepo{
 		vehi.setPlaca(placa);
 		vehi.setPrecio(new BigDecimal(20000));
 		vehi.setMarca("FORD");
-		vehi.setTipo("liviano");
+		vehi.setTipo("pesado");
 		return vehi;
 	}
 
